@@ -5,33 +5,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Галерея результатов — Учебная практика 04</title>
 <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-<header><h1>Галерея результатов</h1></header>
-<nav>
-<a href="index.html">Главная</a>
-<a href="practices.html">Список практик</a>
-<a href="gallery.html">Галерея результатов</a>
-</nav>
-<main>
+<canvas id="stars"></canvas>
+<div class="page">
+<header class="hero">
+<span class="kicker">Результаты работ</span>
+<h1>Галерея результатов</h1>
+<p class="sub">Скриншоты интерфейсов, кода, схем и готовых макетов по каждой практической работе.</p>
+</header>
+<nav class="top"><a href="index.html" class="">Главная</a><a href="practices.html" class="">Список практик</a><a href="gallery.html" class="active">Галерея результатов</a></nav>
+<main class="wrap">
 <div class="gallery">
-<figure><img src="images/screenshot-01.png" alt="Практика 1"><figcaption>Практика 1 — Интерфейс среды разработки</figcaption></figure>
-<figure><img src="images/screenshot-02.png" alt="Практика 1"><figcaption>Практика 1 — Фрагмент кода</figcaption></figure>
-<figure><img src="images/screenshot-03.png" alt="Практика 1"><figcaption>Практика 1 — Результат работы</figcaption></figure>
-<figure><img src="images/screenshot-04.png" alt="Практика 2"><figcaption>Практика 2 — Интерфейс программы</figcaption></figure>
-<figure><img src="images/screenshot-05.png" alt="Практика 2"><figcaption>Практика 2 — Блок-схема алгоритма</figcaption></figure>
-<figure><img src="images/screenshot-06.png" alt="Практика 2"><figcaption>Практика 2 — Результат работы</figcaption></figure>
-<figure><img src="images/screenshot-07.png" alt="Практика 3"><figcaption>Практика 3 — Макет веб-страницы</figcaption></figure>
-<figure><img src="images/screenshot-08.png" alt="Практика 3"><figcaption>Практика 3 — Фрагмент кода</figcaption></figure>
-<figure><img src="images/screenshot-09.png" alt="Практика 3"><figcaption>Практика 3 — Результат вёрстки</figcaption></figure>
-<figure><img src="images/screenshot-10.png" alt="Практика 4"><figcaption>Практика 4 — Интерфейс инструмента</figcaption></figure>
-<figure><img src="images/screenshot-11.png" alt="Практика 4"><figcaption>Практика 4 — Диаграмма</figcaption></figure>
-<figure><img src="images/screenshot-12.png" alt="Практика 4"><figcaption>Практика 4 — Результат работы</figcaption></figure>
-<figure><img src="images/screenshot-13.png" alt="Практика 5"><figcaption>Практика 5 — Макет сайта</figcaption></figure>
-<figure><img src="images/screenshot-14.png" alt="Практика 5"><figcaption>Практика 5 — Фрагмент кода</figcaption></figure>
-<figure><img src="images/screenshot-15.png" alt="Практика 5"><figcaption>Практика 5 — Готовый опубликованный сайт</figcaption></figure>
+<figure><img src="images/screenshot-01.png" alt="Практика 1 — Интерфейс среды разработки" loading="lazy"><figcaption>Практика 1 — Интерфейс среды разработки</figcaption></figure>
+<figure><img src="images/screenshot-02.png" alt="Практика 1 — Фрагмент кода" loading="lazy"><figcaption>Практика 1 — Фрагмент кода</figcaption></figure>
+<figure><img src="images/screenshot-03.png" alt="Практика 1 — Результат работы" loading="lazy"><figcaption>Практика 1 — Результат работы</figcaption></figure>
+<figure><img src="images/screenshot-04.png" alt="Практика 2 — Интерфейс программы" loading="lazy"><figcaption>Практика 2 — Интерфейс программы</figcaption></figure>
+<figure><img src="images/screenshot-05.png" alt="Практика 2 — Блок-схема алгоритма" loading="lazy"><figcaption>Практика 2 — Блок-схема алгоритма</figcaption></figure>
+<figure><img src="images/screenshot-06.png" alt="Практика 2 — Результат работы" loading="lazy"><figcaption>Практика 2 — Результат работы</figcaption></figure>
+<figure><img src="images/screenshot-07.png" alt="Практика 3 — Макет веб-страницы" loading="lazy"><figcaption>Практика 3 — Макет веб-страницы</figcaption></figure>
+<figure><img src="images/screenshot-08.png" alt="Практика 3 — Фрагмент кода" loading="lazy"><figcaption>Практика 3 — Фрагмент кода</figcaption></figure>
+<figure><img src="images/screenshot-09.png" alt="Практика 3 — Результат вёрстки" loading="lazy"><figcaption>Практика 3 — Результат вёрстки</figcaption></figure>
+<figure><img src="images/screenshot-10.png" alt="Практика 4 — Интерфейс инструмента" loading="lazy"><figcaption>Практика 4 — Интерфейс инструмента</figcaption></figure>
+<figure><img src="images/screenshot-11.png" alt="Практика 4 — Диаграмма" loading="lazy"><figcaption>Практика 4 — Диаграмма</figcaption></figure>
+<figure><img src="images/screenshot-12.png" alt="Практика 4 — Результат работы" loading="lazy"><figcaption>Практика 4 — Результат работы</figcaption></figure>
+<figure><img src="images/screenshot-13.png" alt="Практика 5 — Макет сайта" loading="lazy"><figcaption>Практика 5 — Макет сайта</figcaption></figure>
+<figure><img src="images/screenshot-14.png" alt="Практика 5 — Фрагмент кода" loading="lazy"><figcaption>Практика 5 — Фрагмент кода</figcaption></figure>
+<figure><img src="images/screenshot-15.png" alt="Практика 5 — Готовый опубликованный сайт" loading="lazy"><figcaption>Практика 5 — Готовый опубликованный сайт</figcaption></figure>
 </div>
 </main>
-<footer>© 2026 Маликов А.Д., группа 3ИИС-1024</footer>
+<footer>© 2026 Маликов Алексей Дмитриевич · группа 3ИИС-1024 · GitHub Pages</footer>
+</div>
+<script src="js/stars.js"></script>
+
 </body>
 </html>

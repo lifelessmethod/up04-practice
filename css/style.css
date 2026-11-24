@@ -148,7 +148,7 @@ ul.practices a:hover { color: var(--accent); text-decoration: underline; }
 .lb-figure { max-width: min(92vw, 1280px); text-align: center; }
 .lb-figure img {
   max-width: 100%; max-height: 80vh; border-radius: 12px;
-  border: 1px solid var(--line); box-shadow: 0 20px 80px rgba(0, 0, 0, .6);
+  background: #f5f7fa; border: 1px solid var(--line); box-shadow: 0 20px 80px rgba(0, 0, 0, .6);
 }
 .lb-figure figcaption { margin-top: 14px; color: var(--text); font-size: 1.05rem; }
 .lb-btn {

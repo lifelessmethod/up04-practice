@@ -88,19 +88,31 @@ main.wrap { max-width: 1000px; margin: 0 auto; padding: 20px 20px 60px; }
 #atlas svg line { stroke: rgba(125, 211, 252, .35); stroke-width: 1.5; stroke-dasharray: 6 6; transition: .25s; }
 #atlas svg line.lit { stroke: var(--star); stroke-dasharray: none; filter: drop-shadow(0 0 6px var(--star)); }
 .star {
-  position: absolute; transform: translate(-50%, -50%); cursor: pointer; text-align: center; width: 130px;
+  position: absolute; transform: translate(-50%, -50%); cursor: pointer; text-align: center; width: 170px;
+  user-select: none;
 }
 .star .dot {
-  width: 18px; height: 18px; margin: 0 auto 8px; border-radius: 50%;
-  background: radial-gradient(circle at 35% 35%, #fff, var(--accent) 55%, transparent 75%);
-  box-shadow: 0 0 16px var(--accent), 0 0 40px rgba(125, 211, 252, .5);
+  width: 26px; height: 26px; margin: 0 auto 10px; border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #fff, var(--accent) 55%, transparent 78%);
+  box-shadow: 0 0 18px var(--accent), 0 0 46px rgba(125, 211, 252, .55);
   transition: .25s;
 }
 .star:hover .dot, .star.sel .dot {
-  background: radial-gradient(circle at 35% 35%, #fff, var(--star) 55%, transparent 75%);
-  box-shadow: 0 0 18px var(--star), 0 0 52px rgba(255, 209, 102, .65); transform: scale(1.25);
+  background: radial-gradient(circle at 35% 35%, #fff, var(--star) 55%, transparent 78%);
+  box-shadow: 0 0 20px var(--star), 0 0 58px rgba(255, 209, 102, .7); transform: scale(1.25);
 }
-.star .name { font-size: .82rem; font-weight: 700; color: var(--text); text-shadow: 0 0 12px rgba(125,211,252,.6); }
+.star .name {
+  display: inline-block; font-size: 1rem; font-weight: 700; color: #fff;
+  background: rgba(10, 18, 48, .85); border: 1px solid var(--line); border-radius: 10px;
+  padding: 6px 12px; text-shadow: 0 0 10px rgba(125, 211, 252, .5);
+  transition: .2s;
+}
+.star:hover .name, .star.sel .name {
+  border-color: rgba(255, 209, 102, .6); background: rgba(42, 33, 12, .9);
+  box-shadow: 0 0 16px rgba(255, 209, 102, .25);
+}
+.star .go { display: block; margin-top: 6px; font-size: .75rem; color: var(--accent); opacity: 0; transition: .2s; }
+.star:hover .go { opacity: 1; }
 
 #detail { min-height: 210px; }
 #detail .tag { color: var(--star); letter-spacing: .25em; font-size: .72rem; text-transform: uppercase; }

@@ -1,0 +1,23 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: #f0f4f8; color: #1f2937; line-height: 1.6; }
+header { background: #1e3a8a; color: #fff; padding: 28px 20px; text-align: center; }
+header h1 { font-size: 2rem; }
+nav { background: #162d6b; padding: 12px; text-align: center; }
+nav a { color: #dbeafe; text-decoration: none; margin: 0 18px; font-weight: 600; }
+nav a:hover { color: #fff; text-decoration: underline; }
+main { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
+.card { background: #fff; border-radius: 12px; padding: 26px; margin-bottom: 24px; box-shadow: 0 2px 10px rgba(0,0,0,.08); }
+.btn { display: inline-block; background: #1e3a8a; color: #fff; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; margin: 6px 8px 6px 0; }
+.btn:hover { background: #162d6b; }
+.btn-green { background: #15803d; } .btn-green:hover { background: #166534; }
+ul.practices { list-style: none; }
+ul.practices li { padding: 14px 0; border-bottom: 1px solid #e5e7eb; }
+ul.practices a { color: #1e3a8a; font-weight: 600; text-decoration: none; font-size: 1.1rem; }
+ul.practices a:hover { text-decoration: underline; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+.gallery figure { background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+.gallery img { width: 100%; display: block; }
+.gallery figcaption { padding: 10px 14px; font-size: .95rem; color: #374151; }
+footer { text-align: center; padding: 22px; color: #6b7280; font-size: .9rem; margin-top: 30px; }
+.info-row { margin-bottom: 10px; font-size: 1.1rem; }
+.info-row b { color: #1e3a8a; }

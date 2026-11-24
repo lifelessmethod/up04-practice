@@ -40,13 +40,15 @@
   if (!atlas) return;
 
   var nodes = [
-    { id: 1, x: 12, y: 68 },
-    { id: 2, x: 30, y: 32 },
-    { id: 3, x: 50, y: 60 },
-    { id: 4, x: 68, y: 26 },
-    { id: 5, x: 86, y: 55 }
+    { id: 1, x: 8,  y: 34 },
+    { id: 2, x: 20, y: 70 },
+    { id: 3, x: 33, y: 26 },
+    { id: 4, x: 46, y: 64 },
+    { id: 5, x: 59, y: 24 },
+    { id: 6, x: 72, y: 66 },
+    { id: 7, x: 89, y: 38 }
   ];
-  var links = [[0, 1], [1, 2], [2, 3], [3, 4], [0, 2], [2, 4]];
+  var links = [[0, 1], [1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [0, 2], [1, 3], [2, 4], [3, 5], [4, 6]];
 
   var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
   var lines = links.map(function (l) {
@@ -82,7 +84,7 @@
       '<p><b>Суть задания:</b> ' + d.task + '</p>' +
       '<p><b>Результат:</b> ' + d.result + '</p>' +
       '<a class="btn" href="practice-' + d.id + '.html">Открыть страницу практики</a> ' +
-      '<a class="btn green" href="reports/practice-' + d.id + '-report.docx" download>Скачать отчёт</a>';
+      '<a class="btn green" href="reports/' + d.file + '" download>Скачать отчёт</a>';
   }
 
   nodes.forEach(function (n, i) {

@@ -3,26 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Практическая работа 4. Разработка диаграмм и схем — Учебная практика 04</title>
+<title>Практика 4 — Учебная практика 04</title>
 <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-<header><h1>Практическая работа 4. Разработка диаграмм и схем</h1></header>
-<nav>
-<a href="index.html">Главная</a>
-<a href="practices.html">Список практик</a>
-<a href="gallery.html">Галерея результатов</a>
-</nav>
-<main>
+<canvas id="stars"></canvas>
+<div class="page">
+<header class="hero">
+<span class="kicker">Практическая работа 4</span>
+<h1>Разработка диаграмм и схем</h1>
+
+</header>
+<nav class="top"><a href="index.html" class="">Главная</a><a href="practices.html" class="active">Список практик</a><a href="gallery.html" class="">Галерея результатов</a></nav>
+<main class="wrap">
+
 <div class="card">
-<a class="btn" href="practices.html">← К списку практик</a>
+<a class="btn ghost" href="practices.html">← К созвездию практик</a>
 <h2>Суть задания</h2>
-<p>Построить диаграммы (UML / ER) по заданному описанию предметной области с использованием инструмента моделирования.</p>
+<p style="color:var(--muted)">Построить диаграммы (UML / ER) по заданному описанию предметной области с использованием инструмента моделирования.</p>
 <h2>Результат</h2>
-<p>Построены диаграммы в инструменте моделирования, экспортированы изображения, оформлены в отчёт.</p>
-<a class="btn btn-green" href="reports/practice-4-report.docx" download>Скачать отчёт (DOCX)</a>
+<p style="color:var(--muted)">Построены диаграммы в инструменте моделирования, экспортированы изображения, оформлены в отчёт.</p>
+<a class="btn" href="reports/practice-4-report.docx" download>Скачать отчёт (DOCX)</a>
 </div>
+
 </main>
-<footer>© 2026 Маликов А.Д., группа 3ИИС-1024</footer>
+<footer>© 2026 Маликов Алексей Дмитриевич · группа 3ИИС-1024 · GitHub Pages</footer>
+</div>
+<script src="js/stars.js"></script>
+
 </body>
 </html>

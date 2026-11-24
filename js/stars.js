@@ -88,8 +88,16 @@
   nodes.forEach(function (n, i) {
     var el = document.createElement('div');
     el.className = 'star';
-    el.innerHTML = '<div class="dot"></div><div class="name">Практика ' + n.id + '</div>';
-    el.addEventListener('click', function () { select(i); });
+    el.setAttribute('role', 'link');
+    el.setAttribute('tabindex', '0');
+    el.setAttribute('aria-label', 'Открыть практику ' + n.id + ': ' + window.PRACTICES[i].title);
+    el.innerHTML = '<div class="dot"></div><div class="name">Практика ' + n.id + '</div>' +
+                   '<div class="go">перейти →</div>';
+    el.addEventListener('mouseenter', function () { select(i); });
+    el.addEventListener('click', function () { window.open('practice-' + n.id + '.html', '_blank'); });
+    el.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); window.open('practice-' + n.id + '.html', '_blank'); }
+    });
     atlas.appendChild(el);
     n.el = el;
   });

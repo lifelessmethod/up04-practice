@@ -3,33 +3,43 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Учебная практика 04 — Главная</title>
+<title>Главная — Учебная практика 04</title>
 <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-<header>
+<canvas id="stars"></canvas>
+<div class="page">
+<header class="hero">
+<span class="kicker">УП04 · Учебная практика</span>
 <h1>Учебная практика 04</h1>
-<p>УП04. Работа с ресурсами Интернета. Размещение цифровой информации в среде Интернет</p>
+<p class="sub">Карта выполненных работ: интерактивный атлас практик, галерея результатов и отчётные материалы.</p>
 </header>
-<nav>
-<a href="index.html">Главная</a>
-<a href="practices.html">Список практик</a>
-<a href="gallery.html">Галерея результатов</a>
-</nav>
-<main>
+<nav class="top"><a href="index.html" class="active">Главная</a><a href="practices.html" class="">Список практик</a><a href="gallery.html" class="">Галерея результатов</a></nav>
+<main class="wrap">
+
 <div class="card">
 <h2>Информация о студенте</h2>
 <div class="info-row"><b>ФИО:</b> Маликов Алексей Дмитриевич</div>
 <div class="info-row"><b>Группа:</b> 3ИИС-1024</div>
-<div class="info-row"><b>Практика:</b> УП04 — Размещение цифровой информации в среде Интернет</div>
+<div class="info-row"><b>Практика:</b> УП04 — Работа с ресурсами Интернета. Размещение цифровой информации в среде Интернет</div>
+<div class="stats">
+<div><div class="num">5</div><div class="lbl">практик</div></div>
+<div><div class="num">15</div><div class="lbl">скриншотов</div></div>
+<div><div class="num">5</div><div class="lbl">отчётов</div></div>
+</div>
 </div>
 <div class="card">
-<h2>Разделы сайта</h2>
-<a class="btn" href="practices.html">Список практических работ</a>
-<a class="btn btn-green" href="gallery.html">Галерея результатов</a>
-<p style="margin-top:12px">На сайте размещены выполненные практические работы, краткие описания заданий и ссылки на скачивание отчётов.</p>
+<h2>Навигация по созвездию практик</h2>
+<p style="color:var(--muted);margin-bottom:16px">Выберите раздел, чтобы изучить выполненные работы и их результаты.</p>
+<a class="btn" href="practices.html">Созвездие практик</a>
+<a class="btn green" href="gallery.html">Галерея результатов</a>
 </div>
+
 </main>
-<footer>© 2026 Маликов А.Д., группа 3ИИС-1024. Сайт размещён на GitHub Pages.</footer>
+<footer>© 2026 Маликов Алексей Дмитриевич · группа 3ИИС-1024 · GitHub Pages</footer>
+</div>
+<script src="js/stars.js"></script>
+
 </body>
 </html>
